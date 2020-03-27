@@ -37,3 +37,6 @@ jobs:
     
     - name: Check Get-FileHash syntax
       run: Get-FileHash -?
+    
+    - name: Test Get-FileHash on README.md
+      run: (Get-FileHash -Path "README.md" -Algorithm "SHA512").Hash
