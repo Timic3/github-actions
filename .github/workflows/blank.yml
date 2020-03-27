@@ -34,3 +34,6 @@ jobs:
         
     - name: Check PowerShell version
       run: $PSVersionTable
+    
+    - name: Check Get-FileHash syntax
+      run: Get-FileHash -?
