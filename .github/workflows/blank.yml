@@ -44,3 +44,7 @@ jobs:
     - name: Get PowerShell version from cmd
       shell: cmd
       run: powershell $PSVersionTable
+    
+    - name: Test Get-FileHash on README.md from cmd
+      shell: cmd
+      run: powershell (Get-FileHash -Path "README.md" -Algorithm "SHA512").Hash
