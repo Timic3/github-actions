@@ -32,6 +32,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    - name: VSWhere
+      uses: heaths/setup-msbuild:issue10@c4f3bee
         
     # - name: Check PowerShell version
     #   run: $PSVersionTable
